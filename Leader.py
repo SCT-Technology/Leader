@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 import re
 import time
-from imp import load_source
-
-PlayerInfoAPI = load_source('PlayerInfoAPI', './plugins/PlayerInfoAPI.py')
 
 LeaderStat = False
 Leader = None
