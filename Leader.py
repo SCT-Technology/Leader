@@ -47,6 +47,7 @@ def onLeader(server, info):
     server.execute('effect give ' + info.player + ' minecraft:glowing 1000000')
     while LeaderStat:
         time.sleep(60)
+        position = process_coordinate(re.search(r'\[.*\]', server.rcon_query('data get entity {} Pos'.format(name))).group())
         if not LeaderStat:
             break
         else:
